@@ -1,0 +1,5 @@
+
+qa_report.csv
+qa_report.html
+__pycache__/
+*.pyc

@@ -1,0 +1,105 @@
+
+{
+  "infrastructure_lines": {
+    "id_field": "feature_id",
+    "required": [
+      "feature_id",
+      "infrastructure_type",
+      "material"
+    ],
+    "allowed": {
+      "infrastructure_type": [
+        "crash_barrier",
+        "curb",
+        "drainage_channel"
+      ],
+      "material": [
+        "concrete",
+        "metal"
+      ],
+      "condition": [
+        "good"
+      ],
+      "review_status": [
+        "pending"
+      ]
+    }
+  },
+  "infrastructure_points": {
+    "id_field": "feature_id",
+    "required": [
+      "feature_id",
+      "asset_type",
+      "material"
+    ],
+    "allowed": {
+      "asset_type": [
+        "manhole",
+        "streetlight",
+        "tree"
+      ],
+      "asset_status": [
+        "active"
+      ],
+      "material": [
+        "concrete",
+        "metal",
+        "other"
+      ],
+      "review_status": [
+        "pending"
+      ]
+    }
+  },
+  "road-areas": {
+    "id_field": "feature_id",
+    "required": [
+      "feature_id",
+      "area_class",
+      "surface_material"
+    ],
+    "allowed": {
+      "area_class": [
+        "parking_area",
+        "pedestrian_area",
+        "roadway"
+      ],
+      "surface_material": [
+        "asphalt",
+        "concrete"
+      ],
+      "review_status": [
+        "pending"
+      ]
+    }
+  },
+  "study_area": {
+    "id_field": "area_id",
+    "required": [
+      "area_id",
+      "area_name"
+    ],
+    "allowed": {}
+  },
+  "traffic_signs": {
+    "id_field": "feature_id",
+    "required": [
+      "feature_id",
+      "sign_category",
+      "sign_code"
+    ],
+    "allowed": {
+      "sign_category": [
+        "inf",
+        "reg",
+        "warn"
+      ],
+      "mounting_type": [
+        "SP"
+      ],
+      "review_status": [
+        "pending"
+      ]
+    }
+  }
+}
